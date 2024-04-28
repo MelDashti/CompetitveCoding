@@ -139,6 +139,39 @@ build CompetitiveProgramming3.exe: CXX_EXECUTABLE_LINKER__CompetitiveProgramming
   TARGET_IMPLIB = libCompetitiveProgramming3.dll.a
   TARGET_PDB = CompetitiveProgramming3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target cp5
+
+
+#############################################
+# Order-only phony target for cp5
+
+build cmake_object_order_depends_target_cp5: phony || CMakeFiles/cp5.dir
+
+build CMakeFiles/cp5.dir/ex5.cpp.obj: CXX_COMPILER__cp5_unscanned_Debug C$:/Users/meela/CLionProjects/CompetitiveProgramming/ex5.cpp || cmake_object_order_depends_target_cp5
+  DEP_FILE = CMakeFiles\cp5.dir\ex5.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\cp5.dir
+  OBJECT_FILE_DIR = CMakeFiles\cp5.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cp5
+
+
+#############################################
+# Link the executable cp5.exe
+
+build cp5.exe: CXX_EXECUTABLE_LINKER__cp5_Debug CMakeFiles/cp5.dir/ex5.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\cp5.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = cp5.exe
+  TARGET_IMPLIB = libcp5.dll.a
+  TARGET_PDB = cp5.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -171,6 +204,8 @@ build CompetitiveProgramming2: phony CompetitiveProgramming2.exe
 
 build CompetitiveProgramming3: phony CompetitiveProgramming3.exe
 
+build cp5: phony cp5.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -179,7 +214,7 @@ build CompetitiveProgramming3: phony CompetitiveProgramming3.exe
 #############################################
 # Folder: C:/Users/meela/CLionProjects/CompetitiveProgramming/cmake-build-debug
 
-build all: phony CompetitiveProgramming.exe CompetitiveProgramming2.exe CompetitiveProgramming3.exe
+build all: phony CompetitiveProgramming.exe CompetitiveProgramming2.exe CompetitiveProgramming3.exe cp5.exe
 
 # =============================================================================
 # Built-in targets
