@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CompetitiveProgramming",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CompetitiveProgramming::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CompetitiveProgramming-Debug-75862fd719e2f0ba33c3.json",
+					"name" : "CompetitiveProgramming",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CompetitiveProgramming2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CompetitiveProgramming2-Debug-8b8a83896d3e34d33df4.json",
+					"name" : "CompetitiveProgramming2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CompetitiveProgramming3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CompetitiveProgramming3-Debug-64f864fc63ea78c0c793.json",
+					"name" : "CompetitiveProgramming3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cp5::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cp5-Debug-2c387f093d2c5b4aa6db.json",
+					"name" : "cp5",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/meela/CLionProjects/CompetitiveProgramming/cmake-build-debug",
+		"source" : "C:/Users/meela/CLionProjects/CompetitiveProgramming"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
